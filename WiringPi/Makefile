@@ -2,11 +2,11 @@ all: clean build run
 	clean build run
 
 build: 
-	gcc -Wall -o main.o main.c -lwiringPi
+	sudo gcc -Wall -o main.o main.c -lwiringPi
 
 run: 	
-	./main
+	sudo ./main.o
 		 
 clean:
-	-rm *.o
+	sudo rm -rf *.o
 	
